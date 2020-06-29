@@ -8,9 +8,17 @@ function happyHolidaysTo (name) {
 }
 
 function happyCustomHolidayTo (holiday, name) {
-  `Happy ${holiday}, ${name}!`
+  if ( holiday && name /= "") {
+    return `Happy ${holiday}, ${name}!`
+  } else {
+    return 'Happy Independence Day, you!'
+  }
 }
 
 function holidayCountdown (holiday, days) {
-  `It\'s ${days} days until ${holiday}!`
+  if (holiday && days /= "") {
+  return `It\'s ${days} days until ${holiday}!`
+  } else {
+   return ''
+  }
 }
